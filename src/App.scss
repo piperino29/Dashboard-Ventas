@@ -1,0 +1,38 @@
+$light: #ffffff;
+$gray: #e7e9eb;
+
+.flex{
+  display: flex;
+}
+.navbar {
+  background-color: $light;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid $gray;
+}
+
+
+
+
+.sidebar{
+  width: 14rem;
+  height: calc(100vh - 52px);
+  border-right: 1px solid $gray;
+  ul{
+    list-style: none;
+    padding: 1rem 2rem;
+    li{
+      margin-bottom: 1rem;
+      a{
+        text-decoration: none;
+        &.active{
+          background-color:  $gray;
+        }
+      }
+    }
+  }
+}
+
+.DropdownMenu {
+  left: 0; /* Align the menu to the left edge of its parent */
+  text-align: left; /* Align the menu items' text to the left */
+}
